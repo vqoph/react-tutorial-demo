@@ -1,0 +1,14 @@
+.button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #eee;
+  font-weight: bold;
+  border: solid 1px #ddd;
+  color: #666;
+
+  &--primary {
+    background-color: $color-primary;
+    border: solid 1px darken($color-primary, 20%);
+    color: lighten($color-text, 15%);
+  }
+}

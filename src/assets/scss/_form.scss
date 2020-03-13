@@ -1,0 +1,21 @@
+.form {
+  &__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > * {
+      margin: 0.5rem;
+    }
+  }
+  &__input {
+    &--text {
+      font-size: 1rem;
+      padding: 0.5rem 0.5rem;
+      background-color: #fff;
+      border: solid 1px #ddd;
+      &:focus {
+        outline: $color-primary auto 5px;
+      }
+    }
+  }
+}

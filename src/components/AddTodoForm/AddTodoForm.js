@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { func as pFunc } from 'prop-types';
+import './AddTodo.scss';
 
 const propTypes = { onSubmit: pFunc.isRequired };
 
@@ -22,11 +23,21 @@ export default function AddTodoForm({ onSubmit }) {
   return (
     <div className='add-todo-form'>
       <form onSubmit={_onSubmit}>
-        {isInputValid}
-        <input value={inputValue} onChange={e => setInputValue(e.target.value)} />
-        <button type='submit' disabled={!isInputValid}>
-          Add Todo
-        </button>
+        <div className='form__group'>
+          <input
+            typoe='text'
+            className='form__input--text'
+            value={inputValue}
+            onChange={e => setInputValue(e.target.value)}
+          />
+          <button
+            type='submit'
+            className='button button--primary'
+            disabled={!isInputValid}
+          >
+            Add Todo
+          </button>
+        </div>
       </form>
     </div>
   );

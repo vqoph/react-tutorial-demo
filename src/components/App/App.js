@@ -9,11 +9,13 @@ export default function App() {
   return (
     <div className='app'>
       <header className='app__header'>
-        <h1>React todos</h1>
         <img src={logo} className='app__header__logo' alt='logo' />
+        <h1>React todos tutorial</h1>
       </header>
-      <VisibleTodoList className='app__todo-list' />
-      <AddTodo className='app__add-todo' />
+      <div className='app__body'>
+        <VisibleTodoList />
+        <AddTodo />
+      </div>
     </div>
   );
 }
