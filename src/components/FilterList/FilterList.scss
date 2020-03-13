@@ -1,0 +1,28 @@
+@import '../../assets/scss/_variables';
+
+.filter-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  ul,
+  li {
+    list-style-type: none;
+    padding: 0.5rem;
+    margin: 0;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__item {
+    &--current {
+      .button {
+        color: darken($color-primary, 25%);
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.add-todo-form {
+  width: 95%;
+  display: flex;
+  margin: 1rem auto;
+
+  form {
+    width: 100%;
+  }
+
+  .form__group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    & > .form__input--text {
+      flex: 3;
+    }
+  }
+}

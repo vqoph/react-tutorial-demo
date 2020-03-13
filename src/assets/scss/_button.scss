@@ -11,4 +11,16 @@
     border: solid 1px darken($color-primary, 20%);
     color: lighten($color-text, 15%);
   }
+
+  &--text {
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: normal;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

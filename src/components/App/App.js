@@ -4,6 +4,7 @@ import './App.scss';
 
 import VisibleTodoList from '../../containers/VisibleTodoList';
 import AddTodo from '../../containers/AddTodo';
+import Filters from '../../containers/Filters';
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <h1>React todos tutorial</h1>
       </header>
       <div className='app__body'>
+        <Filters />
         <VisibleTodoList />
         <AddTodo />
       </div>

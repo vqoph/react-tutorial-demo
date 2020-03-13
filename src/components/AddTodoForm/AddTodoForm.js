@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { func as pFunc } from 'prop-types';
-import './AddTodo.scss';
+import './AddTodoForm.scss';
 
 const propTypes = { onSubmit: pFunc.isRequired };
 
